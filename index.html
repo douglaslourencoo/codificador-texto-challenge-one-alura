@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de texto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/Vector.svg">    
+</head>
+<body>
+    <header>
+        <div id="logo-alura">
+            <img id="logoAlura" src="assets/logo.png" alt="logo-alura">            
+        </div>
+    </header>
+    <main>
+        <section>
+                <textarea class="textoarea" required placeholder="Digite seu texto..."></textarea>
+                
+                <div class="alerta">
+                    <p>Apenas letras minúsculas e sem acento!</p>
+                </div>
+
+                <div class="botoes">
+                    <button type="button" class="criptografar" onClick="criptografia()">Criptografar</button>
+                    <button type="button" class="descriptografar" onClick="descriptografia()">Descriptografar</button>
+                </div>
+            </section>
+            <section class="resultado">
+                <textarea class="mensagem" cols="20 " rows="11 " placeholder="Digite um texto que você deseja criptografar ou descriptografar 🔓"></textarea>
+                <button type="button" class="copiar" onClick="copia()">Copiar</button>
+            </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Douglas Lourencoo ©️ 2024 - Todos os direitos reservados.</p>
+        <a href="https://www.linkedin.com/in/douglas-lourencoo-986193282/" target="_blank">
+            <img src="assets/linkedin.png" alt="img-linkedin">
+        </a>
+    </footer>
+    <script src="index.js"></script>    
+</body>
+</html>
